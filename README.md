@@ -52,12 +52,6 @@ python gradio_app.py
 
 Open browser at: `http://localhost:7860`
 
-**Interactive Features:**
-- Sliders to adjust: Machine Type, Air Temp, Process Temp, RPM, Torque, Tool Wear
-- Real-time failure predictions
-- Confusion matrices in Model Performance tab
-- Quick scenario buttons
-
 ## 📁 Project Structure
 
 ```
@@ -74,28 +68,6 @@ ML Integration/
 │   ├── confusion_matrix_failure.jpg
 │   └── confusion_matrix_type.jpg
 └── ai4i2020.csv            # Dataset (10,000 samples)     
-```
-
-## 🔧 Python API Usage
-
-```python
-from inference_xgb import PredictiveMaintenancePredictor, format_prediction_report
-
-# Load predictor
-predictor = PredictiveMaintenancePredictor()
-
-# Make prediction
-prediction = predictor.predict_with_names(
-    machine_type="L",
-    air_temp=298.0,
-    process_temp=308.5,
-    rpm=1500,
-    torque=45.0,
-    tool_wear=100.0
-)
-
-# Display report
-print(format_prediction_report(prediction))
 ```
 
 ### Output Example
@@ -144,18 +116,3 @@ Failure Type Probabilities:
 4. Rotational Speed (RPM)
 5. Torque (Nm)
 6. Tool Wear (minutes)
-
-## ⚙️ Requirements
-
-- Python 3.8+
-- pandas
-- scikit-learn
-- xgboost
-- gradio
-- matplotlib
-- seaborn
-- joblib
-
-## 📝 License
-
-Educational use for ASEC ML Integration internship.
