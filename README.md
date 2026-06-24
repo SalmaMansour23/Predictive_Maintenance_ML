@@ -1,6 +1,6 @@
 # Predictive Maintenance ML Pipeline
 
-XGBoost-based machine learning pipeline for predicting machine failure type and probability.
+XGBoost-based machine learning pipeline for predicting machine failure type and probability. Dataset used can be found here: https://data.mendeley.com/datasets/5ww3zv87y7/1
 
 ## 📋 Overview
 
